@@ -27,5 +27,6 @@ sudo swapon /swapfile
 sudo echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
 
 
-#Instalar JAVA 22
-sudo yum install java-22-amazon-corretto --releasever 2023.4.20240429 -y
+#Instalar node e npm
+curl -fsSL https://rpm.nodesource.com/setup_21.x | sudo bash -
+sudo yum install -y nodejs
